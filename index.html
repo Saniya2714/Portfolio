@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saniya Rajan S - Frontend Developer Portfolio showcasing web development and Flutter projects">
+    <meta name="keywords" content="frontend developer, web development, Flutter, portfolio, Saniya Rajan">
+    <title>Saniya's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h1 class="logo">Saniya Rajan S</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm Saniya Rajan👋</h1>
+                <div class="typing-text"></div>
+                <p class="hero-description">
+                    Passionate Frontend Developer crafting beautiful and responsive web experiences
+                </p>
+                <ul class="hero-skills">
+                    <li>🖥️ Frontend Development - HTML, CSS, JavaScript</li>
+                    <li>📱 Mobile App Development - Flutter</li>
+                    <li>💡 Programming Languages - Java, C</li>
+                    <li>🚀 Other Skills - UI/UX Design, Responsive Web Development</li>
+                </ul>
+                <div class="hero-buttons">
+                    <button onclick="window.location.href='#contact'" class="primary-btn">Hire Me</button>
+                    <a href="Resume-Saniya Rajan S (1).pdf" download class="resume-btn">📄 Download Resume</a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/saniya-rajan-29a77225a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Saniya2714" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="saniya image.jpg" alt="Saniya Rajan S - Frontend Developer">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate <strong>Frontend Web Developer</strong> with expertise in creating visually appealing and functional websites. I also have experience in <strong>Flutter</strong> for mobile development and a strong foundation in <strong>Java & C</strong>. I love building efficient and user-friendly interfaces while continuously learning and evolving my skills.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" data-width="90%" style="width: 0%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" data-width="85%" style="width: 0%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Flutter</span>
+                <div class="progress-bar">
+                    <div class="progress" data-width="80%" style="width: 0%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Java</span>
+                <div class="progress-bar">
+                    <div class="progress" data-width="75%" style="width: 0%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">C Programming</span>
+                <div class="progress-bar">
+                    <div class="progress" data-width="70%" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+            <button class="filter-btn" onclick="filterProjects('web')">Web Development</button>
+            <button class="filter-btn" onclick="filterProjects('flutter')">Flutter Apps</button>
+        </div>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project web">
+                <div class="project-image">
+                    <img src="project1.jpg" alt="Portfolio Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="demo-btn">Live Demo</a>
+                            <a href="#" target="_blank" class="github-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio website built with modern web technologies.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project flutter">
+                <div class="project-image">
+                    <img src="project2.jpg" alt="Flutter App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="demo-btn">Live Demo</a>
+                            <a href="#" target="_blank" class="github-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Flutter App</h3>
+                    <p>A cross-platform mobile application built with Flutter.</p>
+                    <div class="tech-stack">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more projects as needed -->
+
+            <!-- Add this inside your projects-container div, after the existing projects -->
+            <div class="project web">
+                <div class="project-image">
+                    <img src="homestay-project.jpg" alt="Homestay Training Platform">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="demo-btn">Live Demo</a>
+                            <a href="#" target="_blank" class="github-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Homestay Training Platform</h3>
+                    <p>An interactive learning platform for homestay owners to enhance their hospitality skills. Features include video tutorials, interactive quizzes, and a certification system.</p>
+                    <div class="tech-stack">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Express</span>
+                        <span>Material-UI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Web Development Bootcamp - Udemy</li>
+            <li>Java Fundamentals - Oracle</li>
+            <li>Programming with Java - Infosys</li>
+            <li>C Programming Bootcamp - Udemy</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to send me a message!</p>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p class="thanks-message" id="thanks-message"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:saniyarajan2005@gmail.com">saniyarajan2005@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> 8754186619</p>
+                <p><i class="fas fa-map-marker-alt"></i> Chennai</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Saniya Rajan S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+</body>
+</html>
