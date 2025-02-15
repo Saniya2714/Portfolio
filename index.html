@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saniya Rajan S - Frontend Developer Portfolio showcasing web development and Flutter projects">
+    <meta name="description" content="Frontend Developer Portfolio - Showcasing Web & Mobile Development Projects using HTML, CSS, JavaScript, and Flutter.">
+
     <meta name="keywords" content="frontend developer, web development, Flutter, portfolio, Saniya Rajan">
     <title>Saniya's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("UKCztLTZQlCd_qScJ");
+        })();
+    </script>
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -67,34 +73,94 @@
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills-container">
-            <div class="skill">
-                <span class="skill-name">HTML/CSS</span>
-                <div class="progress-bar">
-                    <div class="progress" data-width="90%" style="width: 0%"></div>
+            <!-- Frontend Development -->
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <i class="fab fa-html5"></i>
+                        <span class="skill-name">HTML5</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="90%" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-css3-alt"></i>
+                        <span class="skill-name">CSS3</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85%" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-js"></i>
+                        <span class="skill-name">JavaScript-beginner</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85%" style="width: 0%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="skill">
-                <span class="skill-name">JavaScript</span>
-                <div class="progress-bar">
-                    <div class="progress" data-width="85%" style="width: 0%"></div>
+
+            <!-- Mobile Development -->
+            <div class="skill-category">
+                <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <i class="fab fa-flutter"></i>
+                        <span class="skill-name">Flutter</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="80%" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-code"></i>
+                        <span class="skill-name">Dart-beginner</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="75%" style="width: 0%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="skill">
-                <span class="skill-name">Flutter</span>
-                <div class="progress-bar">
-                    <div class="progress" data-width="80%" style="width: 0%"></div>
+
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <i class="fab fa-java"></i>
+                        <span class="skill-name">Java Programming</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="75%" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-code"></i>
+                        <span class="skill-name">C Programming</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="70%" style="width: 0%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="skill">
-                <span class="skill-name">Java</span>
-                <div class="progress-bar">
-                    <div class="progress" data-width="75%" style="width: 0%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <span class="skill-name">C Programming</span>
-                <div class="progress-bar">
-                    <div class="progress" data-width="70%" style="width: 0%"></div>
+
+            <!-- Additional Skills -->
+            <div class="skill-category">
+                <h3><i class="fas fa-plus-circle"></i> Additional Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <i class="fas fa-paint-brush"></i>
+                        <span class="skill-name">UI/UX Design</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="75%" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-mobile-screen"></i>
+                        <span class="skill-name">Responsive Design</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85%" style="width: 0%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,18 +178,20 @@
             <!-- Project 1 -->
             <div class="project web">
                 <div class="project-image">
-                    <img src="project1.jpg" alt="Portfolio Website">
+                    
                     <div class="project-overlay">
                         <div class="project-links">
-                            <a href="#" target="_blank" class="demo-btn">Live Demo</a>
-                            <a href="#" target="_blank" class="github-btn">
+                            <a href="https://saniya2714.github.io/Portfolio/" target="_blank" class="demo-btn">Live Demo</a>
+                            <a href="https://github.com/Saniya2714/Portfolio" target="_blank" class="github-btn">
                                 <i class="fab fa-github"></i> View Code
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Portfolio Website</h3>
+                    <h3>
+                        <i class="fas fa-globe"></i> Portfolio Website
+                    </h3>
                     <p>A responsive portfolio website built with modern web technologies.</p>
                     <div class="tech-stack">
                         <span>HTML</span>
@@ -136,18 +204,19 @@
             <!-- Project 2 -->
             <div class="project flutter">
                 <div class="project-image">
-                    <img src="project2.jpg" alt="Flutter App">
                     <div class="project-overlay">
                         <div class="project-links">
-                            <a href="#" target="_blank" class="demo-btn">Live Demo</a>
-                            <a href="#" target="_blank" class="github-btn">
+                            <a href="https://saniya2714.github.io/documentGeneration/" target="_blank" class="demo-btn">Live Demo</a>
+                            <a href="https://github.com/Saniya2714/documentGeneration" target="_blank" class="github-btn">
                                 <i class="fab fa-github"></i> View Code
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Flutter App</h3>
+                    <h3>
+                        <i class="fas fa-mobile-alt"></i> Flutter App
+                    </h3>
                     <p>A cross-platform mobile application built with Flutter.</p>
                     <div class="tech-stack">
                         <span>Flutter</span>
@@ -162,18 +231,20 @@
             <!-- Add this inside your projects-container div, after the existing projects -->
             <div class="project web">
                 <div class="project-image">
-                    <img src="homestay-project.jpg" alt="Homestay Training Platform">
+                    
                     <div class="project-overlay">
                         <div class="project-links">
-                            <a href="#" target="_blank" class="demo-btn">Live Demo</a>
-                            <a href="#" target="_blank" class="github-btn">
+                            <a href="https://saniya2714.github.io/homestaytraining/" target="_blank" class="demo-btn">Live Demo</a>
+                            <a href="https://github.com/Saniya2714/homestaytraining" target="_blank" class="github-btn">
                                 <i class="fab fa-github"></i> View Code
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Homestay Training Platform</h3>
+                    <h3>
+                        <i class="fas fa-home"></i> Homestay Training Platform
+                    </h3>
                     <p>An interactive learning platform for homestay owners to enhance their hospitality skills. Features include video tutorials, interactive quizzes, and a certification system.</p>
                     <div class="tech-stack">
                         <span>React.js</span>
@@ -201,14 +272,13 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to send me a message!</p>
         <form id="contact-form">
             <input type="text" id="name" name="name" placeholder="Your Name" required>
             <input type="email" id="email" name="email" placeholder="Your Email" required>
             <textarea id="message" name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
-        <p class="thanks-message" id="thanks-message"></p>
+        <p id="thanks-message"></p>
     </section>
 
     <!-- Footer -->
@@ -240,5 +310,89 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <style>
+        .skill-category h3 {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.4rem;
+        }
+
+        /* Different colors for each skill category heading */
+        .skill-category:nth-child(1) h3 {
+            color: #FF6B6B;  /* Red-ish for Frontend Development */
+        }
+
+        .skill-category:nth-child(2) h3 {
+            color: #4ECDC4;  /* Turquoise for Mobile Development */
+        }
+
+        .skill-category:nth-child(3) h3 {
+            color: #FFD93D;  /* Yellow for Programming Languages */
+        }
+
+        .skill-category:nth-child(4) h3 {
+            color: #95E1D3;  /* Mint for Additional Skills */
+        }
+
+        /* Matching icon colors with their headings */
+        .skill-category:nth-child(1) h3 i {
+            color: #FF6B6B;
+        }
+
+        .skill-category:nth-child(2) h3 i {
+            color: #4ECDC4;
+        }
+
+        .skill-category:nth-child(3) h3 i {
+            color: #FFD93D;
+        }
+
+        .skill-category:nth-child(4) h3 i {
+            color: #95E1D3;
+        }
+
+        .thanks-message {
+            margin-top: 1rem;
+            text-align: center;
+            font-weight: 500;
+            min-height: 24px;
+            transition: all 0.3s ease;
+        }
+
+        #contact-form button {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        #contact-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        #contact-form button:active {
+            transform: translateY(0);
+        }
+
+        /* Add loading state to button */
+        #contact-form button.loading {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        #contact-form button.loading::after {
+            content: '...';
+        }
+    </style>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("UKCztLTZQlCd_qScJ");
+        })();
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
